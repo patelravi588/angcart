@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AdminComponent } from './adminview/admin.component';
 import { AdminRoutingModule } from './admin-routing.module';
-import { FooterComponent } from '../component/footer/footer.component';
-import { HeaderComponent } from '../component/header/header.component';
+import { ComponentModule } from '../component/component.module';
 
 
 
 @NgModule({
-  declarations: [AdminComponent, HeaderComponent, FooterComponent],
+  declarations: [AdminComponent],
   imports: [
+    ComponentModule,
     CommonModule,
     AdminRoutingModule,
     FormsModule
