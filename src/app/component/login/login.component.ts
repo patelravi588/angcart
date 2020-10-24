@@ -48,7 +48,7 @@ loginIssue: string= "";
         if(loggedUserInfo[0].role == "Admin"){
           this.router.navigate(["/admin", "adminView"]);
         } else {
-          this.router.navigate(["/user", "userView"]);
+          this.router.navigate(["/user", "register"]);
         }
       } else {
         alert("Please fill the correct login detail then click Submit");
