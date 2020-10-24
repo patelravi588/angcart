@@ -1,7 +1,22 @@
-<div class="loginarea">
-    <h1>sCart</h1>
-    <input type="text" placeholder="User Name" [(ngModel)]="loginModel.User" name ="User" class="loginInput">
-    <input type="password" placeholder="password" [(ngModel)]="loginModel.Password" name ="Password" class="loginInput">
-    <button placeholder="Submit" (click)="login()">Submit</button>
+<div class="loginarea bg-white">
+    <div class="container-fluid my-4">
+            <h1>Login Authentication</h1>
+        <div class="row my-2">
+            <div class="col-md-12 my-2">
+                <input type="text" placeholder="User Name" [(ngModel)]="loginModel.User" name ="User" class="loginInput">
+            </div>
+            <div class="col-md-12">
+                <input type="password" placeholder="password" [(ngModel)]="loginModel.Password" name ="Password" class="loginInput">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 my-2">
+                <button placeholder="Submit" class="btn btn-primary" (click)="login()">Submit</button>
+            </div>
+            <div class="col-md-12">
+                    <button placeholder="Sign Up" class="btn btn-secondary" (click)="login()">Sign Up</button>
+                </div>
+        </div>
+    </div>
     <span *ngIf="loginError">{{ loginIssue }}</span>
 </div>

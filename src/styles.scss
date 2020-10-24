@@ -1,6 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
-body {
+html body {
     font-size: 16px;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    // color: #412b63;
+    color: #261f44;
+    background: rgb(246,240,255);
+    background: linear-gradient(0deg, rgba(246,240,255,1) 0%, rgba(65,43,99,1) 100%);
 }
+
+// BORDER
+.border-5 { border-radius: 5px;}
+
+/* 
+    Background 
+*/
+.bg-white {
+    background-color: #fff;
+}
+.bg-dark {
+    background-color: #261f44;
+}
+.bg-main {
+    //background-color: #7952B3;
+    background: #412b63;
+    // background: #261F44;
+//     background: rgb(244,246,255);
+// background: linear-gradient(0deg, rgba(244,246,255,1) 0%, rgba(65,43,99,1) 100%);
+}
+
+
+
+
+/* 
+    Global color 
+*/
+.text-base {
+    color: #6f6985;
+    
+}
+.text-main, h1,h2,h3,h4,h5 {
+    color: #554174;
+}
+.text-main-contrast {
+    color: #fff;
+}
+
+
+
+
+/* 
+    Global BUTTONS 
+*/
+.btn-primary {
+    color: #fff !important;
+    background-color: #ff5938 !important;
+    border-color: #ff5938 !important;
+}
+
+.btn-brand{
+    background: #7952B3;
+    color: #ffffff;
+}
+
+
+
+// TABLE 
+.table-bordered th, .table-bordered td{ padding-left: 10px;}

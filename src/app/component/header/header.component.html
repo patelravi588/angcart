@@ -1,10 +1,10 @@
-<div class="parent">
+<div class="parent bg-main">
     <div class="logo">LOGO</div>
-    <div class="user">
+    <div class="user text-main-contrast">
         <a>Welcome {{ currentUser | uppercase }}</a>
     </div>
     <div class="user">
-        <button (click)="logout()">Logout</button>
+        <button (click)="logout()" class="btn btn-primary">Logout</button>
     </div>
     
 </div>
